@@ -304,6 +304,7 @@ const deleteAll = async (id, delData) => {
     const inpFilter = document.querySelector('#inp-search')
     const search = inpFilter.value
     const requisition = await fetch (`https://thefinalproject.onrender.com/patients?inpName_like=${search}`)
+    console.log('rodei quase tudo!')
     const apiUrl = await requisition.json()
     console.log('rodei quase tudo!')
     render(apiUrl)
