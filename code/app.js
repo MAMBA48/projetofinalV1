@@ -108,6 +108,7 @@ closeFactSec = () => {
 //consumindo a api
 const consumo = async () => { //adicionando dados do paciente
     const urlAPI = await fetch('https://thefinalproject.onrender.com/patients')//diretorio => /patients
+    
     let infoPatient = await urlAPI.json()
     render(infoPatient)
     //select the table
@@ -164,6 +165,7 @@ render = () => {
             `
     })
 }
+render()
 
 //creating a new register - função para confirmar e enviar os dados adicionados para o json
 formRegElement.addEventListener('submit',
