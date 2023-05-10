@@ -299,8 +299,9 @@ const deleteAll = async (id, delData) => {
     })
     window.location.reload()
   }
-
-  filtroPesquisa = async() => {
+//o filter esta com problemas, ainda não consegui resolver!
+/*
+filtroPesquisa = async() => {
     const inpFilter = document.querySelector('#inp-search')
     const search = inpFilter.value
     console.log(search)
@@ -310,4 +311,4 @@ const deleteAll = async (id, delData) => {
     render(apiUrl)
     console.log('rodei tudo!')
   }
-  
+*/
