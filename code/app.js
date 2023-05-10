@@ -306,5 +306,6 @@ const deleteAll = async (id, delData) => {
     const requisition = await fetch (`https://thefinalproject.onrender.com/patients?inpName_like=${search}`)
     const apiUrl = await requisition.json()
 
+    render(apiUrl)
   }
   
