@@ -140,10 +140,10 @@ const consumo = async () => { //adicionando dados do paciente
 }
 consumo()
 
-render = () => {
+render = (aux) => {
     const theTable = document.querySelector('#new-patients-table')
     //increment the lines with the new informations
-    infoPatient.forEach(choiceItem => {
+    aux.forEach(choiceItem => {
         theTable.innerHTML +=
             `
             <tr>
@@ -165,7 +165,6 @@ render = () => {
             `
     })
 }
-render()
 
 //creating a new register - função para confirmar e enviar os dados adicionados para o json
 formRegElement.addEventListener('submit',
