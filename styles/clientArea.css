@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: none;
+}
+main.container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 90px;
+}
+div.user-hover {
+    background: linear-gradient(358.25deg, rgba(229, 229, 229, 0.68) 19.64%, #FFFFFF 75.78%)
+}
+div.user-hover-opt-1 {
+    display: none;
+    box-sizing: border-box;
+    transition: all 10ms;
+    background: #fff;
+    box-shadow:  0px 0px 10px 0.5px #0000002a;
+    border-radius: 8px;
+    z-index: 1;
+    position: fixed;
+    top: 60px;
+    right: 30px;
+    height: auto;
+    width: 230px;
+}
+div.rec-hover-opt {
+    display: none;
+    box-sizing: border-box;
+    transition: all 10ms;
+    background: #fff;
+    box-shadow:  0px 0px 10px 0.5px #0000002a;
+    border-radius: 8px;
+    z-index: 1;
+    position: fixed;
+    top: 60px;
+    right: 30px;
+    height: auto;
+    width: 230px;
+}
+div.rec-hover-opt-2{
+    display: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 10ms;
+    background: #fff;
+    box-shadow:  0px 0px 10px 0.5px #0000002a;
+    border-radius: 8px;
+    z-index: 1;
+    bottom: 20px;
+    right: 30px;
+    height: auto;
+    width: 120px;
+}
+div.ul-row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+ul.modal-logout p {
+    font-size: 1rem;
+    color: #000;
+}
+small.user-small {
+    padding-left: 0px;
+}
+div.user-hover-opt-1 ul {
+    list-style: none;
+    padding-bottom: 10px;
+}
+div.user-hover-opt-1 li {
+    margin-top: 0px;
+    padding: 6px;
+}
+div.user-hover-opt-1 a {
+    color: #000;
+    text-decoration: none;
+}
+div.user-hover-opt-1 small {
+    color: #000;
+    padding-bottom: 4px;
+}
+div.title-form {
+    font-family: 'Comfortaa';
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    justify-content: left;
+    font-size: 1.4rem;
+}
+label.title-section {
+    margin-bottom: 20px;
+}
+nav.btn-table-patient {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+form.filter-search {
+    display: flex;
+}
+input.search-area {
+    font-size: 1rem;
+    padding-left: 20px;
+    border: 1px solid#BDBDBD;
+    border-radius: 50px 0px 0px 50px;
+}
+button.btn-wxr-search {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.1rem;
+    background: #00995D;
+    padding: 10px;
+    border-radius: 0px 50px 50px 0px;
+    color:#fff;
+}
+button.btn-wxr-search:active {
+    background: #017849;
+}
+div.reg-patients {
+    box-sizing: border-box;
+    height: auto;
+    width: 85vw;
+    background: #fff;
+    max-width: 1024px;
+    min-width: 490px;           
+    box-shadow:  0px 4px 10px 0.5px #0000002a;
+    border-radius: 15px;
+    padding: 30px;
+}
+table.patient-table {
+    border-collapse: collapse; /*remove o espaçamento das células*/
+    width: 100%;
+    margin-bottom: 40px;
+}
+table.patient-table th, td {
+    padding: 4px;
+    border: 1px solid#BDBDBD;
+}
+table.patient-table td {
+    text-align: center;
+    padding: 4px;
+    border: 1px solid#bdbdbdd0;
+}
+table.patient-table th {
+    font-weight: 100;
+    color: #2F80ED;
+}
+td#btn-chng {
+    display: flex;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+tr {
+    box-sizing: border-box;
+}
+div.btn-api-chng {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.icons-edit {
+    margin-top: 4px;
+    cursor: pointer;
+    height: 25px;
+    width: 28px;
+    background-position: 0%;
+    background-size: cover;
+}
+div.logo-menu-space {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    box-shadow:  0px 0px 10px 0.5px #0000002a;
+}
+div#user-space {
+    cursor: pointer;
+}
+div#user-space p {
+    color: #017849;
+}
+span.user-log {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+h3 {
+    display: flex;
+}
+a {
+    text-decoration: none;
+}

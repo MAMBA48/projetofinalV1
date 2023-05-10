@@ -1,0 +1,125 @@
+/*here is style codes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+* {
+    margin:  0px;
+    padding: 0px;
+}
+header.top-menu {
+    display: flex;
+    z-index: 1;
+    box-shadow:  0px 4px 10px 0.5px #0000002a;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: #fff;
+    position: fixed;
+    height: 65px;
+    min-width: 490px; 
+    width: 100%;
+}
+body {
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #E5E5E5;
+    background-image: url('imgs/backPage.png');
+    background-repeat: no-repeat;
+}
+
+/*this contains all elements*/
+section.all-content {
+    height: auto;
+    width: auto;
+}
+main.container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+form.login-space {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 10px 0.5px #0000002a;
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px;
+    background: #017849;
+    height: auto;
+    width: 500px;
+}
+form.login-space a {
+    text-align: center;
+    text-decoration: none;
+    color: #E5E5E5;
+}
+form.login-space a:hover {
+    color: #cecece;
+}
+span.inpAround {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 350px;
+}
+input#user, input#password {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none;
+    height: 25px;
+    width: 94%;
+    padding: 10px;
+}
+small {
+    position: relative;
+    color: #E5E5E5;
+}
+img.logo-login {
+    margin: 40px;
+    width: fit-content;
+}
+button.submit-btt {
+    border: 1px solid #E5E5E5;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: #E5E5E5;
+}
+button.submit-btt:hover {
+    border: 1px solid #cecece;
+    color: #cecece;
+}
+button.btn-wxr {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.1rem;
+    background: #017849;
+    padding: 10px;
+    border-radius: 30px;
+    color:#fff;
+}
+button.btn-wxr:active {
+    background: #00995D;
+}
+div.icon-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #fff;
+    color: #017849;
+    height: 20px;
+    width: 20px;
+}

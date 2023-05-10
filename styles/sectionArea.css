@@ -1,0 +1,82 @@
+div.btn-back-area {
+    display: flex;
+    box-sizing: border-box;
+    z-index: 0;
+    margin-left: 120px;
+    justify-content: left;
+    position: fixed;
+    right: right;
+    height: 40px;
+    width: 100%;
+    background: #fff;
+    margin-top: 65px;
+    border-radius: 16px;
+    padding: 20px;
+}
+div.btn-back {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+div.btn-back img {
+    margin-right: 10px;
+}
+section.info-about-section {
+    box-sizing: border-box;
+    height: auto;
+    width: 85vw;
+    max-width: 1024px;
+    min-width: 490px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow:  0px 0px 10px 0.1px #0000002a;
+    background: #fff;
+}
+article.area-title-section {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+div.label-this-section {
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: left;
+}
+div.btn-this-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+div.the-info {
+    box-sizing: border-box;
+    height: auto;
+}
+article.info-payment {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+}
+div.payment-details {
+    display: flex;
+    margin-top: 20px;
+}
+div.payment-details small {
+    color: #757575;
+}
+div.btn-edit-del-info {
+    display: flex;
+    gap: 4px;
+}
+div.info-date-hour small{
+    color: #757575;
+}
+div.datas-payment {
+    margin-right: 10%;
+}

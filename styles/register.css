@@ -1,0 +1,45 @@
+form.login-space {
+    margin-bottom: 80px;
+    background: #fff;
+}
+h3, h4 {
+    font-weight: 100;
+    text-align: center;
+    color: #00995D;
+}
+span.salutation {
+    margin-bottom: 30px;
+}
+input#user, input#email {
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+    margin-bottom: 30px;
+    height: 25px;
+    width: 94%;
+    padding: 10px;
+}
+small {
+    position: relative;
+    color: #000;
+}
+button.submit-btt {
+    display: flex;
+    position: relative;
+    left: 190px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    width: 160px;
+    padding: 10px;
+    background: #00995D;
+    box-shadow:  0px 4px 10px 0.5px #0000002a;
+    color: #E5E5E5;
+}
+button.submit-btt:hover {
+    border: 1px solid #cecece;
+    color: #cecece;
+}
+img.arrow {
+    width: 10px;
+}

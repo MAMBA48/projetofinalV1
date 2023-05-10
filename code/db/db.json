@@ -1,0 +1,20 @@
+{
+  "patients": [
+    {
+      "inpCpf": "44009792875",
+      "inpName": "Eduardo Nascimento Campos",
+      "inpDate": "",
+      "inpEmail": "teste@teste.com",
+      "inpSex": "",
+      "inpNational": "",
+      "inpNatural": "",
+      "inpProf": "",
+      "inpSchool": "",
+      "inpStatus": "",
+      "inpMotherName": "",
+      "inpFatherName": "",
+      "id": 1
+    }
+  ],
+  "users": []
+}

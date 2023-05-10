@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/clientArea.css">
+    <link rel="stylesheet" href="styles/aboutPatient.css">
+    <link rel="stylesheet" href="styles/modalClient.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário</title>
+</head>
+<body>
+    <header id="top-menu" class="top-menu">
+        <div class="logo-menu-space" onclick="initialPage()">
+            <img src="styles/imgs/logo-header.png" alt="">
+        </div>
+        <span id="user-log" class="user-log">
+            <div id="user-space" onclick="hoverUser()">
+                    <p>Bem-vindo(a), <b>USUARIO</b></p>
+            </div>
+            <div id="hover-opt-1" class="user-hover-opt-1">
+                <ul class="modal-logout">
+                    <div class="user-hover">
+                        <li><p id="user-name"><strong>user</strong></p></li>
+                        <li><small class="user-small">user@wexer.com.br</small></li>
+                    </div>
+                    <hr>
+                    <li><p><a href="login.html">Sair</a></p></li>
+                </ul>
+            </div>
+        </span>
+    </header>
+
+    <section class="all-content">
+        <main id="" class="container">
+                <nav class="filter-title-area">
+                    <div class="title-form">
+                        <label class="title-section">Prontuário</label>
+                    </div>
+                    <form id="filter-search" class="filter-search">
+                        <input id="inp-search" class="search-area" type="search" placeholder="Pesquisar">
+                        <button id="filter-patients" class="btn-wxr-search">Filtrar</button>
+                    </form>
+                </nav>
+            <section id="patient-identification">
+                <article class="patient-identification">
+                    <h4>Identificação do paciente</h4>
+                    <ul>
+                        <li><img class="icons-img" src="styles/imgs/icon-patient.png" alt="">Paciente</li>
+                            <small>Eduardo Brow</small>
+                        <li><img class="icons-img" src="styles/imgs/icon-calendar.png" alt="">Nascimento</li>
+                            <small>10/09/2000</small>
+                        <li><img class="icons-img" src="styles/imgs/icon-biz.png" alt="">Profissão</li>
+                            <small>Programador</small>
+                        <li><img class="icons-img" src="styles/imgs/icon-book.png" alt="">Escolaridade</li>
+                            <small>Superior incompleto</small>
+                    </ul>
+                </article>
+                <main id="about-publ" class="about-publ">
+                    <article class="info-section">
+                        <div id="btn-section" class="btn-section" onclick="newDataSec()">
+                            <img class="icon-sec" src="styles/imgs/icon-section.png" alt="">
+                            <p>Sessão</p>
+                        </div>
+                        <div id="btn-fact" class="btn-fact" onclick="newFactSec()">
+                            <img class="icon-pin" src="styles/imgs/icon-pin.png" alt="">
+                            <p>Fato relevante</p>
+                        </div>
+                    </article>
+                    <hr>
+                    <article id="" class="new-info">
+                        <div class="around-icon">
+                            <img src="styles/imgs/icon-sec-white.png" alt="">
+                        </div>
+                        <div id="name-new-info" class="name-new-info" onclick="">
+                            <div id="the-info" class="the-info" onclick="medicalInfo()">
+                                <h3>Sessão 01</h3>
+                                <small id="new-info-reg-date">20 de dezembro de 2022</small>
+                            </div>
+                            <div class="btn-more-opt-1">
+                                <p id="more-opt-click" onclick="modalSec()">...</p>
+
+                                <!--the edit buttons modal-->
+                                <div id="hover-opt-sec" class="rec-hover-opt-2">
+                                        <div class="ul-row">
+                                            <img src="styles/imgs/icon-edit-lapis.png" alt=""><p style="color:#2F80ED">Editar</p>  
+                                        </div>
+                                        <div class="ul-row">
+                                            <img src="styles/imgs/icon-delete-red.png" alt=""><p style="color:#EB5757">Excluir</p>  
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="medicalInfo()">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eaque nesciunt ad laborum veritatis aspernatur amet et. Reprehenderit maxime nulla consectetur aut est! Ipsam quis ducimus architecto aperiam eveniet. Officiis?
+                            </p>     
+                        </div>
+                    </article>
+
+                    <article id="" class="new-info-fact">
+                        <div class="around-icon-pin">
+                            <img src="styles/imgs/icon-pin-white.png" alt="">
+                        </div>
+                        <div id="name-new-info" class="name-new-info" onclick="">
+                            <div id="the-info" class="the-info" onclick="">
+                                <h3>Fato relevante</h3>
+                                <small id="new-info-reg-date">15 de setembro de 2022</small>
+                            </div>
+                            <div class="btn-more-opt-1">
+                                <p id="more-opt-click" onclick="">...</p>
+                            </div>
+                        </div>
+                        <div onclick="">
+                            <p>
+                                Paciente não compareceu.
+                            </p>     
+                        </div>
+                    </article>
+                </main>
+            </section>
+
+<!-- THE MODAL OF SECTION -->
+
+            <span id="modal-section" class="modal-first">
+                <section class="the-form-section">
+                    <div class="space-top-other-modal">
+                        <span class="title-modal">Nova Sessão</span>
+                        <div id="closeReg" class="closeReg" onclick="closeModalSec()">x</div>
+                    </div>
+                    <form id="" class="reg-section-form" action="">
+                        <table class="inp-data-patients">
+                            <tr>
+                                <h4>1  Dados Gerais</h4>
+                                <td>
+                                    <label for="">Data*</label><br>
+                                    <input id="inp-date"  class="inp-patient-style" type="date" name="date" placeholder="24/01/2023">
+                                </td>
+                                <td>
+                                    <label for="">Hora de início*</label><br>
+                                    <input id="inp-name" type="time" name="hour-init" placeholder="12:00">
+                                </td>
+                                <td>
+                                    <label for="">Hora fim*</label><br>
+                                    <input id="inp-date" type="time" name="hour-finish" placeholder="13:00">
+                                </td>
+                            </tr>
+                            
+                        </table>
+                        <hr>
+                        <table>
+                            <tr>
+                                <h4>2  Sessão</h4>
+                                <td>
+                                    <label>Titulo*</label>
+                                    <input type="text" name="" id="">
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </form>
+                    <hr>
+                        <nav class="btn-other-modal">
+                            <div>
+                                <p>*Campos obrigatórios</p>
+                            </div>
+                            <div class="action-area">
+                                <div class="btn-cancel"><p onclick="closeModalSec()">Cancelar</p></div>
+                                <button  class="btn-create" id="submit-data" type="submit">Criar</button>
+                            </div>
+                        </nav>
+                </section>
+            </span>
+
+<!-- THE MODAL OF FACTS -->
+
+            <span id="modal-fact" class="modal-first">
+                <section class="the-form-section">
+                    <div class="space-top-other-modal">
+                        <span class="title-modal">Novo Fato Relevante</span>
+                        <div id="closeReg" class="closeReg" onclick="closeFactSec()">x</div>
+                    </div>
+                    <form id="" class="reg-section-form" action="">
+                        <table class="inp-data-patients">
+                            <tr>
+                                <td>
+                                    <label for="">CPF</label><br>
+                                    <input id="inp-cpf"  class="inp-patient-style" type="text" name="cpf" placeholder="Digite">
+                                </td>
+                                <td>
+                                    <label for="">Nome</label><br>
+                                    <input id="inp-name" type="text" name="name" placeholder="Digite">
+                                </td>
+                                <td>
+                                    <label for="">Data de Nascimento</label><br>
+                                    </select>
+                                    <input id="inp-date" type="text" name="date" placeholder="Digite">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <hr>
+                        <nav class="btn-other-modal">
+                            <div>
+                                <p>*Campos obrigatórios</p>
+                            </div>
+                            <div class="action-area">
+                                <div class="btn-cancel"><p onclick="closeFactSec()">Cancelar</p></div>
+                                <button  class="btn-create" id="submit-data" type="submit">Criar</button>
+                            </div>
+                        </nav>
+                </section>
+            </span>
+
+        </main>
+    </section>
+    <script src="code/app.js"></script>
+</body>
+</html>

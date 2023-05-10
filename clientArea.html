@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/clientArea.css">
+    <link rel="stylesheet" href="styles/modalClient.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal</title>
+</head>
+<body>
+    <header id="top-menu" class="top-menu">
+        <div class="logo-menu-space" onclick="initialPage()">
+            <img src="styles/imgs/logo-header.png" alt="">
+        </div>
+        <span id="user-log" class="user-log">
+            <div id="user-space" onclick="hoverUser()">
+                    <p>Bem-vindo(a), <b>USUARIO</b></p>
+            </div>
+            <div id="hover-opt-1" class="user-hover-opt-1">
+                <ul class="modal-logout">
+                    <div class="user-hover">
+                        <li><p id="user-name"><b>usuario</b></p></li>
+                        <li><small>user@wexer.com.br</small></li>
+                    </div>
+                    <hr>
+                    <li><p><a href="login.html">Sair</a></p></li>
+                </ul>
+            </div>
+        </span>
+    </header>
+        <section class="all-content">
+            <main id="" class="container">
+                    <div class="title-form">
+                        <label class="title-section">Meus Pacientes</label>
+                    </div>
+                    <div id="reg-patients" class="reg-patients">
+                        <nav id="btn-table-patient" class="btn-table-patient">
+                            <button id="new-reg" class="btn-wxr" onclick="newReg()">
+                                <div class="icon-path"><div>+</div>
+                                </div> 
+                                Novo Cadastro
+                            </button>
+                            <form id="filter-search" class="filter-search">
+                                <input id="inp-search" class="search-area" type="search" placeholder="Pesquisar">
+                                <button id="filter-patients" class="btn-wxr-search" onclick="">Filtrar</button>
+                            </form>
+                        </nav>
+                        <table id="new-patients-table" class="patient-table">
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Ações</th>
+                            </tr>
+                        </table>
+
+                        <span id="modal" class="modal-first">
+                            <form id="reg-patient-form-new" class="reg-patient-form" action="">
+                                <div class="space-top-modal">
+                                    <span class="title-modal">Novo paciente</span>
+                                    <div id="closeReg" class="closeReg" onclick="closeReg()">x</div>
+                                </div>
+                                <table class="inp-data-patients">
+                                    <tr>
+                                        <td>
+                                            <label for="">CPF</label><br>
+                                            <input id="inp-cpf"  class="inp-patient-style" type="number" name="cpf" placeholder="Digite" >
+                                        </td>
+                                        <td>
+                                            <label for="">Nome</label><br>
+                                            <input id="inp-name" type="text" name="name" placeholder="Digite" >
+                                        </td>
+                                        <td>
+                                            <label for="">Data de Nascimento</label><br>
+                                            </select>
+                                            <input id="inp-date" type="date" name="date" placeholder="01/04/2003" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">E-mail</label><br>
+                                            <input id="inp-email"  class="inp-patient-style" type="email" name="email" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Sexo/Gênero</label><br>
+                                            <input id="inp-sex-choice" type="text" name="sex" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Nacionalidade</label><br>
+                                            <input id="national" type="text" name="date" placeholder="Digite">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Naturalidade</label><br>
+                                            <input id="inp-natural-country"  class="inp-patient-style" type="text" name="cpf" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Profissão</label><br>
+                                            <input id="inp-profession" type="text" name="name" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Escolaridade</label><br>
+                                            <input id="inp-schooling" type="text" name="date" placeholder="Digite">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="">Estado Civil</label><br>
+                                            <input id="inp-status"  class="inp-patient-style" type="text" name="cpf" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Mãe</label><br>
+                                            <input  id="inp-mother-name" type="text" name="name" placeholder="Digite">
+                                        </td>
+                                        <td>
+                                            <label for="">Pai</label><br>
+                                            <input id="inp-father-name" type="text" name="date" placeholder="Digite">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <nav class="btn-modal">
+                                    <div>
+                                        <p>*Campos obrigatórios</p>
+                                    </div>
+                                    <div class="action-area">
+                                        <div class="btn-cancel" onclick="cancelNewReg()"><p>Cancelar</p></div>
+                                        <button  class="btn-create" id="submit-data" type="submit">Criar</button>
+                                    </div>
+                                </nav>
+                            </form>
+                        </span>
+                    </div>
+            </main>
+        </section>
+
+<!--        edit patient data modal       -->
+
+        <span id="modal-edit" class="modal-first">
+            <form id="reg-patient-form-edit" class="reg-patient-form" action="">
+                <div class="space-top-modal">
+                    <span class="title-modal">Editar dados do paciente</span>
+                    <div id="closeEdit" class="closeReg" onclick="closeEdit()">x</div>
+                </div>
+                <table class="inp-data-patients">
+                    <tr>
+                        <td>
+                            <label for="">CPF</label><br>
+                            <input id="new-inp-cpf"  class="inp-patient-style" type="number" name="cpf" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Nome</label><br>
+                            <input id="new-inp-name" type="text" name="name" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Data de Nascimento</label><br>
+                            </select>
+                            <input id="new-inp-date" type="date" name="date" placeholder="Digite">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">E-mail</label><br>
+                            <input id="new-inp-email"  class="inp-patient-style" type="email" name="email" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Sexo/Gênero</label><br>
+                            <input id="new-inp-sex-choice" type="text" name="sex" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Nacionalidade</label><br>
+                            <input id="new-national" type="text" name="date" placeholder="Digite">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Naturalidade</label><br>
+                            <input id="new-inp-natural-country"  class="inp-patient-style" type="text" name="cpf" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Profissão</label><br>
+                            <input id="new-inp-profession" type="text" name="name" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Escolaridade</label><br>
+                            <input id="new-inp-schooling" type="text" name="date" placeholder="Digite">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Estado Civil</label><br>
+                            <input id="new-inp-status"  class="inp-patient-style" type="text" name="cpf" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Mãe</label><br>
+                            <input  id="new-inp-mother-name" type="text" name="name" placeholder="Digite">
+                        </td>
+                        <td>
+                            <label for="">Pai</label><br>
+                            <input id="new-inp-father-name" type="text" name="date" placeholder="Digite">
+                        </td>
+                    </tr>
+                </table>
+                <nav class="btn-modal">
+                    <div>
+                        <p>*Campos obrigatórios</p>
+                    </div>
+                    <div class="action-area">
+                        <div class="btn-cancel" onclick="cancelEdit()"><p>Cancelar</p></div>
+                        <button  class="btn-create" id="submit-data" type="submit">Salvar alterações</button>
+                    </div>
+                </nav>
+            </form>
+        </span>
+    </div>
+</main>
+</section>
+<script src="code/app.js"></script>
+</body>
+</html>

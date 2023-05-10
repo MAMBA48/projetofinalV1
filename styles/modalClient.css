@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+
+span.modal-first { /*CORTINA MODAL*/
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    color: #000;
+    background: #00000080;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+div.space-top-modal {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+div.space-top-other-modal {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+div.edit-datas {
+    position: absolute;
+    margin-top: 5px;
+    left: 180px;
+}
+span#modal-see-data input {
+    background: rgba(192, 192, 192, 0.5);
+}
+span.title-modal {
+    font-weight: 700;
+    color: #00995D;
+}
+div.closeReg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    background: lightgray;
+    right: 0px;
+    height: 20px;
+    width: 20px;
+}
+form.reg-patient-form {
+    display: flex;
+    box-sizing: border-box;
+    transition: all 1s;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    min-width: 450px;
+    width: 80%;
+    max-width: 1000px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 10px;
+}
+form.reg-patient-form input {
+    all: unset;
+    box-sizing: border-box;
+    background: #fff;
+    height: 40px;
+    width: 90%;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+form.reg-section-form input {
+    all: unset;
+    box-sizing: border-box;
+    background: #fff;
+    height: 40px;
+    width: 90%;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+table.inp-data-patients {
+    box-sizing: border-box;
+    height: auto;
+    overflow-y: scroll;
+    width: 100%;
+    margin-bottom: 30px;
+}
+nav.btn-modal {
+    display: flex;
+    font-family: 'Comfortaa';
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.800rem;
+    height: auto;
+    width: 100%;
+}
+nav.btn-other-modal {
+    display: flex;
+    margin-top: 20px;
+    font-family: 'Comfortaa';
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.800rem;
+    height: auto;
+    width: 100%;
+}
+nav.btn-modal-only-see {
+    display: none;
+    font-family: 'Comfortaa';
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.800rem;
+    height: auto;
+    width: 100%;
+}
+div.action-area {
+    display: flex;
+    padding:  5px;
+    gap: 20px;
+    align-items: center;
+}
+button.btn-create {
+    all: unset;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    height: auto;
+    width: 150px;
+    background: #00995D;
+    border-radius: 8px;
+}
+div.btn-cancel {
+    cursor: pointer;
+}
+td {
+    border: none;
+    padding: 2px;
+    font-size: 1rem;
+}
+section.the-form-section {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    min-width: 480px;
+    width: 70%;
+    max-width: 600px;
+    padding: 20px;
+}
+form.reg-section-form {
+    display: flex;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    min-height: 320px;
+    flex-direction: column;
+}
