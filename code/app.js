@@ -109,7 +109,9 @@ closeFactSec = () => {
 const consumo = async () => { //adicionando dados do paciente
     const urlAPI = await fetch('https://thefinalproject.onrender.com/patients')//diretorio => /patients
     let infoPatient = await urlAPI.json()
+    render(infoPatient)
     //select the table
+    /*
     const theTable = document.querySelector('#new-patients-table')
     //increment the lines with the new informations
     infoPatient.forEach(choiceItem => {
@@ -133,9 +135,35 @@ const consumo = async () => { //adicionando dados do paciente
             </tr>       
             `
     })
-    
+    */
 }
 consumo()
+
+render = () => {
+    const theTable = document.querySelector('#new-patients-table')
+    //increment the lines with the new informations
+    infoPatient.forEach(choiceItem => {
+        theTable.innerHTML +=
+            `
+            <tr>
+                <td>${choiceItem.id}</td>
+                <td>${choiceItem.inpName}</td>
+                <td>${choiceItem.inpCpf}</td>
+                <td id="btn-chng">
+                    <div id="btn-see" class="btn-api-chng">
+                        <img onclick="seePatient(${choiceItem.id})" class="icons-edit" src="styles/imgs/icon-look.png" alt="see data">
+                    </div>
+                    <div id="btn-updt" class="btn-api-chng">
+                        <img onclick="editDatas(${choiceItem.id})" class="icons-edit" src="styles/imgs/icon-edit.png" alt="edit">
+                    </div>
+                    <div id="btn-del" class="btn-api-chng">
+                        <img onclick="deleteAll(${choiceItem.id})" class="icons-edit" src="styles/imgs/icon-delete.png" alt="clean">
+                    </div>
+                </td>
+            </tr>       
+            `
+    })
+}
 
 //creating a new register - função para confirmar e enviar os dados adicionados para o json
 formRegElement.addEventListener('submit',
@@ -269,5 +297,13 @@ const deleteAll = async (id, delData) => {
       body: JSON.stringify(delData)
     })
     window.location.reload()
+  }
+
+  filtroPesquisa = async() => {
+    const inpFilter = document.querySelector('#inp-search')
+    const search = inpFilter.value
+    const requisition = await fetch (`https://thefinalproject.onrender.com/patients?inpName_like=${search}`)
+    const apiUrl = await requisition.json()
+
   }
   
